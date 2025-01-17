@@ -113,7 +113,7 @@ def main(verbs, wrong_answers):
         # Check the answer
         if risposta == participio_corretto:
             print("\tCorretto! 🎉")
-            wrong_answers.remove(verb)
+            wrong_answers.discard(verb)
         else:
             print(f"\tSbagliato. La risposta corretta è: {participio_corretto}")
             wrong_answers.add(verb)  # Add the incorrect verb to the set
